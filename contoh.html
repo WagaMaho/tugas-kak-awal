@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kereta Api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="kontainer-kereta">
+        <div class="lokomotif">
+            <div class="kubah"></div>
+            <div class="mata"></div>
+            <div class="roda"></div>
+            <div class="roda2"></div>
+        </div>
+        <div class="gerbong">
+            <div class="roda"></div>
+            <div class="roda"></div>
+        </div>
+        <div class="gerbong">
+            <div class="roda"></div>
+            <div class="roda"></div>
+        </div>
+        <div class="gerbong">
+            <div class="roda"></div>
+            <div class="roda"></div>
+        </div>
+        <div class="gerbong">
+            <div class="roda"></div>
+            <div class="roda"></div>
+        </div>
+    </div>
+
+    <div id="form-tambah">
+        <input type="text" id="nama-gerbong" placeholder="Nama Gerbong">
+        <button onclick="tambahGerbong()">Tambah Gerbong</button>
+    </div>
+
+    <script>
+        function tambahGerbong() {
+            var kontainerKereta = document.getElementById("kontainer-kereta");
+            var namaGerbong = document.getElementById("nama-gerbong").value;
+
+            var gerbongBaru = document.createElement("div");
+            gerbongBaru.className = "gerbong2";
+
+            var roda1 = document.createElement("div");
+            roda1.className = "roda";
+            gerbongBaru.appendChild(roda1);
+
+            var roda2 = document.createElement("div");
+            roda2.className = "roda";
+            gerbongBaru.appendChild(roda2);
+
+            var nama = document.createElement("div");
+            nama.innerText = namaGerbong;
+            nama.style.position = "absolute";
+            nama.style.bottom = "10px";
+            nama.style.left = "10px";
+            gerbongBaru.appendChild(nama);
+
+            kontainerKereta.appendChild(gerbongBaru);
+        }
+    </script>
+</body>
+</html>

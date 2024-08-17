@@ -1,0 +1,89 @@
+.lokomotif {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+}
+
+.kubah {
+    width: 80px;
+    height: 80px;
+    background-color: lightblue;
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.mata {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.gerbong {
+    width: 80px;
+    height: 80px;
+    background-color: lightgreen;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.gerbong2 {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 191, 0);
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.roda {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+}
+
+.roda2 {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 70px;
+}
+
+.roda:nth-child(2) {
+    left: 50px;
+}
+
+#kontainer-kereta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#form-tambah {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#form-tambah input {
+    margin-right: 10px;
+}
